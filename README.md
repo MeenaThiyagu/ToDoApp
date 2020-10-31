@@ -49,4 +49,4 @@ Login button has `event binding` with a method which has code to print in the co
 
 Username : <input type="text" name="Username" [(ngModel)]="unFromComp">
 1.1: Hardcoded check in Login Component: Using Angular Attribute `*ngIf`
-if ngIf comes to true, the text in <small> tag will be displayed
+if ngIf comes to true, the text in small tag will be displayed
