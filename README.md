@@ -41,7 +41,7 @@ not accessible in `index.html` as index.html can access only app.component.html 
 
 ## Creating an ToDo Application:
 
-Step 1: Creating a Login Page(3 Databindings) Create Login Component(html has uName and pW)
+Step 1: Creating a Login Page( new 3 Databindings) Create Login Component(html has uName and pW)
 `Interpolation` is done in Login component html to get default values to UI from Login.ts...
 Login button has `event binding` with a method which has code to print in the console.i.e., `(click)=HandleLogin()`...
 
