@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MessageComponent } from './message/message.component';
+
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, MessageComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent],
   imports: [BrowserModule, AppRoutingModule,FormsModule],
   providers: [],
   bootstrap: [AppComponent],
@@ -17,6 +17,3 @@ export class AppModule {
   title = 'MyTodoApplicationModule';
 }
 
-export class MessageModule {
-  title = 'MyTodoMessageModule';
-}
