@@ -38,3 +38,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 accessible in `app.component.html`
 not accessible in `index.html` as index.html can access only app.component.html as it acts as a proxy index file
+
+## Creating an ToDo Application:
+
+Step 1: Login Page(3 Databindings) Create Login Component(html has uName and pW)
+`Interpolation` is done in Login component html to get default values to UI from Login.ts...
+Login button has `event binding` with a method which has code to print in the console.i.e., `(click)=HandleLogin()`...
+
+`ngModel` to provide 2 way(bi-directional) data binding: import `FormsModule` banana-in-a-box-approach`:
+
+<!--Username : <input type="text" name="Username" [(ngModel)]="unFromComp">-->
