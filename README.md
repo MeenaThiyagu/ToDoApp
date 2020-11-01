@@ -47,6 +47,10 @@ Login button has `event binding` with a method which has code to print in the co
 
 `ngModel` to provide 2 way(bi-directional) data binding: import `FormsModule` banana-in-a-box-approach`:
 
-Username : <input type="text" name="Username" [(ngModel)]="unFromComp">
+    Username : <input type="text" name="Username" [(ngModel)]="unFromComp">
+
 1.1: Hardcoded check in Login Component: Using Angular Attribute `*ngIf`
 if ngIf comes to true, the text in small tag will be displayed
+
+1.2: `Routing`with `app-root` in `index.html`
+`app-routing.module.ts` has array of objects of paths and corresponding components defined.So this is the module which would handle all the routing.
