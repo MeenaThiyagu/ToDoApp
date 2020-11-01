@@ -59,3 +59,17 @@ if ngIf comes to true, the text in small tag will be displayed
 in a constructor any paramater is considered as member of the class
 constructor(private router: Router){}
 this.router.navigate([welcome])
+
+1.4: `Pass Username from Login to Welcome`:
+1.4.1: login.component.ts->this.router.navigate['welcome',this.unFromComp]
+1.4.2: app-routing.module.ts-> path:’welcome/:name’
+1.4.3: welcome.component.ts->constructor(private route : ActivatedRoute)
+-> onInit(){this.uname=this.route.snapshot.params[‘name’]}
+1.4.4: welcome.component.html->welcome{{uname}}
+
+## Insights
+
+Deleting a component?
+Remove import from app.modules.ts and
+same file with @NgModules
+Delete the folder of the component in project
