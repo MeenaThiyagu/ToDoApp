@@ -72,6 +72,7 @@ this.router.navigate([welcome])
 ToDos.component.ts->object of ToDos created
 ToDos.component.html->If only one? `<td>{{todo.id}}</td>`
 If all list of values? `<tr \*ngFor=”let list of todos”><td>{{list.id}}</td>`
+RouterLink(similar to href) toDo in welcome.html
 
 ## Insights
 
