@@ -1,0 +1,28 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{toDo.id}}</td>
+            <td>{{toDo.description}}</td>
+        </tr>
+    </tbody>
+</table>
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let list of toDos">
+            <td>{{list.id}}</td>
+            <td>{{list.description}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -67,6 +67,12 @@ this.router.navigate([welcome])
 -> onInit(){this.uname=this.route.snapshot.params[‘name’]}
 1.4.4: welcome.component.html->welcome{{uname}}
 
+## Create ToDos component and populate ToDo table
+
+ToDos.component.ts->object of ToDos created
+ToDos.component.html->If only one? `<td>{{todo.id}}</td>`
+If all list of values? `<tr \*ngFor=”let list of todos”><td>{{list.id}}</td>`
+
 ## Insights
 
 Deleting a component?
