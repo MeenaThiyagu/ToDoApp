@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
     console.log("Hello  "+ this.unFromComp);
     if(this.unFromComp==='MeenaT' && this.pwFromComp==='Hello123!'){
       this.isInvalidLogin=false
-      this.router.navigate(['welcome'])
+      this.router.navigate(['welcome',this.unFromComp])
       
       //Redirecting to Welcome component
     }
