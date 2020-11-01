@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { ErrorComponent } from './error/error.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ErrorComponent],
+  declarations: [AppComponent, LoginComponent, ErrorComponent, WelcomeComponent],
   imports: [BrowserModule, AppRoutingModule,FormsModule],
   providers: [],
   bootstrap: [AppComponent],

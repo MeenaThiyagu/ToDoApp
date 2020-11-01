@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,18 +12,22 @@ export class LoginComponent implements OnInit {
   errorMessage="Invalid Credentails";
   isInvalidLogin=false;
 
-  constructor() { }
+  constructor(private router :Router) { }//Router dependency injected
 
   ngOnInit(): void {
   }
 
   HandleLogin(){
     console.log("Hello  "+ this.unFromComp);
-    if(this.unFromComp==='MeenaT' && this.pwFromComp==="Hello123!"){
+    if(this.unFromComp==='MeenaT' && this.pwFromComp==='Hello123!'){
       this.isInvalidLogin=false
+      this.router.navigate(['welcome'])
+      
+      //Redirecting to Welcome component
     }
     else{
     this.isInvalidLogin=true
+    this.router.navigate(['error'])
     }
   }
  

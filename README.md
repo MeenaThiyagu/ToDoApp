@@ -54,3 +54,8 @@ if ngIf comes to true, the text in small tag will be displayed
 
 1.2: `Routing`with `app-root` in `index.html`
 `app-routing.module.ts` has array of objects of paths and corresponding components defined.So this is the module which would handle all the routing.
+
+1.3: `Dependency injecting Router` in Login Component
+in a constructor any paramater is considered as member of the class
+constructor(private router: Router){}
+this.router.navigate([welcome])
