@@ -86,6 +86,14 @@ this.router.navigate([welcome])
     main.ts has AppModule bootstrapped. AppModule has AppComponent bootstrapped.
     app.component.html is hence loaded/visible always hence we can make any footer/static to it.
 
+## Bootstrap CSS
+
+    unpackage bootstrap 1.4.1 min.css and save the url in styles.css
+    Include menu and footer components in app.comp.html
+
+`menu` with navigation links;`footer`and other components such as `welcome`,`login` are designed with bootstrap and css
+`routerLink` doesn't load entire page whereas href does.
+
 ## Insights
 
 Deleting a component?

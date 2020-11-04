@@ -45,15 +45,17 @@
     margin: 0 16px;
   }
 </style>=-->
-<body>
-<!-- <div >
-  <span>Welcome {{title}}</span>
-</div> -->
-<p style=text-align:center>To Do application Header</p>
-<br>
-<router-outlet></router-outlet> 
-<p style=text-align:center>To Do application Footer</p>
-<br>
-<!-- <app-login></app-login> -->
-</body>
+  <body>
+    <!-- <div >
+      <span>Welcome {{title}}</span>
+    </div> -->
+    <app-menu></app-menu>
+    <br>
+    <br>
+    <router-outlet></router-outlet> 
+    <br>
+    <br>
+    <app-footer></app-footer>
+    <!-- <app-login></app-login> -->
+  </body>
 </html>

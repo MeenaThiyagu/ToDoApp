@@ -9,9 +9,11 @@ import { FormsModule } from '@angular/forms';
 import { ErrorComponent } from './error/error.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ListToDosComponent } from './list-to-dos/list-to-dos.component';
+import { MenuComponent } from './menu/menu.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ErrorComponent, WelcomeComponent, ListToDosComponent],
+  declarations: [AppComponent, LoginComponent, ErrorComponent, WelcomeComponent, ListToDosComponent, MenuComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule,FormsModule],
   providers: [],
   bootstrap: [AppComponent],

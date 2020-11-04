@@ -1,5 +1,8 @@
-Username : <input type="text" name="Username" [(ngModel)]="unFromComp">
-Password: <input type="password" name="Password" [(ngModel)]="pwFromComp">
-<button (click)= HandleLogin()>Login</button>
+<h1>Login!</h1>
+<div class="container">
+    Username : <input type="text" name="Username" [(ngModel)]="unFromComp">
+    Password: <input type="password" name="Password" [(ngModel)]="pwFromComp">
+    <button class="btn btn-success"(click)= HandleLogin()>Login</button>
 
-<small *ngIf='isInvalidLogin'>{{errorMessage}}</small>
+    <div *ngIf='isInvalidLogin'class="alert alert-warning">{{errorMessage}}</div>
+</div>
