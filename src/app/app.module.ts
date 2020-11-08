@@ -11,9 +11,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ListToDosComponent } from './list-to-dos/list-to-dos.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ErrorComponent, WelcomeComponent, ListToDosComponent, MenuComponent, FooterComponent],
+  declarations: [AppComponent, LoginComponent, ErrorComponent, WelcomeComponent, ListToDosComponent, MenuComponent, FooterComponent, LogoutComponent],
   imports: [BrowserModule, AppRoutingModule,FormsModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -104,8 +104,11 @@ this.router.navigate([welcome])
 `SessionStorage`is similar to localStorage - session ends when browser closes
 data through website is only stored in sessionStorage/localStorage.
 `LocalStorage`-values set persists across even when browser restarts. Less secure!
+Enable menu links based on userLoggedIn-
+Take the service inside constructor of menu component.ts
+using ngIf of service method.
 
-    dd
+`Logout`: Created component logout and included routerLink in menu.comp.html and routing in app-routing.module.ts; Create a method isUserLoggedOut() in hardcodedservice and Remove sessionStorage; Use this method in logout component by DI via constructor
 
 ## Insights
 

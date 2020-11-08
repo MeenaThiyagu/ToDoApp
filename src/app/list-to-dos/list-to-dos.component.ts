@@ -37,7 +37,8 @@ export class ListToDosComponent implements OnInit {
   toDos=[new toDoClass(1,'Learn Java and Server Side technologies',true, new Date()),
         new toDoClass(2,'Understand Database Management/Connectivity',false, new Date()),
         new toDoClass(3,'Understand Spring/SpringBoot and REST',true, new Date()),
-        new toDoClass(4,'Knowledge on UI technologies such as Angular',false, new Date())
+        new toDoClass(4,'Knowledge on UI technologies such as Angular',false, new Date()),
+        new toDoClass(5,'Knowledge on Backend including RDBMS',false, new Date())
       ]
   constructor() { }
 

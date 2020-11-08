@@ -23,4 +23,8 @@ export class HardcodedAuthenticationService {
   let validatedUser= sessionStorage.getItem('userSession');
   return !(validatedUser===null)
   }
+
+  isUserLoggedOut(){
+    sessionStorage.removeItem('userSession');
+  }
 }
