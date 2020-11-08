@@ -101,6 +101,12 @@ this.router.navigate([welcome])
     Common logic used by the components are written in service.
     Accessed by Dependency injection via constructors of the components
 
+`SessionStorage`is similar to localStorage - session ends when browser closes
+data through website is only stored in sessionStorage/localStorage.
+`LocalStorage`-values set persists across even when browser restarts. Less secure!
+
+    dd
+
 ## Insights
 
 Deleting a component?

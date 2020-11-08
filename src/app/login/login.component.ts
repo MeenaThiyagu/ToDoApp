@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HardcodedAuthenticationService } from '../service/hardcoded-authentication.service';
+import { Injectable } from '@angular/core';
 
-
+@Injectable({
+    providedIn:'root'
+})
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -10,7 +13,7 @@ import { HardcodedAuthenticationService } from '../service/hardcoded-authenticat
 })
 export class LoginComponent implements OnInit {
   unFromComp='MeenaT'
-  pwFromComp='Hello123!'
+  pwFromComp=''
   errorMessage="Invalid Credentails";
   isInvalidLogin=false;
 
