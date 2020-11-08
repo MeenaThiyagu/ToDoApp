@@ -44,6 +44,7 @@ not accessible in `index.html` as index.html can access only app.component.html 
 Step 1: Creating a Login Page( new 3 Databindings) Create Login Component(html has uName and pW)
 `Interpolation` is done in Login component html to get default values to UI from Login.ts...
 Login button has `event binding` with a method which has code to print in the console.i.e., `(click)=HandleLogin()`...
+`Event binding` allows you to listen for and respond to user actions such as keystrokes, mouse movements, clicks, and touches.
 
 `ngModel` to provide 2 way(bi-directional) data binding: import `FormsModule` banana-in-a-box-approach`:
 
@@ -93,6 +94,12 @@ this.router.navigate([welcome])
 
 `menu` with navigation links;`footer`and other components such as `welcome`,`login` are designed with bootstrap and css
 `routerLink` doesn't load entire page whereas href does.
+
+## Independent Authentication Service component:ng g s service/newService
+
+    Some common logics are given in Authentication Service.
+    Common logic used by the components are written in service.
+    Accessed by Dependency injection via constructors of the components
 
 ## Insights
 
