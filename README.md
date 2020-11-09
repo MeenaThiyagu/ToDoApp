@@ -110,6 +110,11 @@ using ngIf of service method.
 
 `Logout`: Created component logout and included routerLink in menu.comp.html and routing in app-routing.module.ts; Create a method isUserLoggedOut() in hardcodedservice and Remove sessionStorage; Use this method in logout component by DI via constructor
 
+## Route Guard:
+
+when user is loggedin only(canActivate in routing), links should be accessible.
+generate routeGuard implementing canActivate and have method canActivate().
+
 ## Insights
 
 Deleting a component?
